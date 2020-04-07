@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
     psnrs = np.zeros((opt.how_many, N))
 
-    bar = pb.ProgressBar(max_value=opt.how_many)
+    bar = pb.ProgressBar(maxval=opt.how_many).start()
     for i, data_raw in enumerate(dataset_loader):
         data_raw[0] = data_raw[0].cuda()
         data_raw[0] = util.crop_mult(data_raw[0], mult=8)
