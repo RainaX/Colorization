@@ -8,4 +8,7 @@ Directory:
 
 pip3 install -r requirements.txt
 
+rm -r checkpoints
 ./scripts/train_siggraph.sh
+
+Modify: root, phase.
