@@ -65,6 +65,7 @@ if __name__ == '__main__':
                 losses = model.get_current_losses()
                 # time to do forward&backward
                 # t = (time.time() - iter_start_time) / opt.batch_size
+                print(losses)
                 t = time.time() - iter_start_time
 
             if total_steps % opt.save_latest_freq == 0:
