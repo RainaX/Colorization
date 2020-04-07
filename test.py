@@ -25,8 +25,8 @@ if __name__ == '__main__':
     opt.nThreads = 1   # test code only supports nThreads = 1
     opt.batch_size = 1  # test code only supports batch_size = 1
     opt.display_id = -1  # no visdom display
-    opt.phase = 'val'
-    opt.dataroot = './dataset/ilsvrc2012/%s/' % opt.phase
+    opt.phase = 'large/2300'
+    opt.dataroot = opt.dataroot = '../11-785hw2p2-s20/train_data/%s/' % opt.phase
     opt.serial_batches = True
     opt.aspect_ratio = 1.
 
